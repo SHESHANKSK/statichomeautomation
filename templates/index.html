@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Automation System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <style>
+      .hide {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: 1px;
+        height: 1px;
+      }
+    </style>
+    <iframe name="hiddenFrame" class="hide"></iframe>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <form action="/form" method="post" target="hiddenFrame">
+          <input class="l device" type="checkbox" name="light01">
+          <p class="devicename">Light 01</p>
+        </div>
+
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <div class="switch device">
+            <input type="checkbox" name="digital01">
+            <label for="toggle">
+              <i class="bulb">
+                <span class="bulb-center"></span>
+                <span class="filament-1"></span>
+                <span class="filament-2"></span>
+                <span class="reflections">
+                  <span></span>
+                </span>
+                <span class="sparks">
+                  <i class="spark1"></i>
+                  <i class="spark2"></i>
+                  <i class="spark3"></i>
+                  <i class="spark4"></i>
+                </span>
+              </i>
+            </label>
+          </div>
+          <p class="devicename">Digital Device 01</p>
+        </div>
+
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <div class="switch device">
+            <input type="checkbox" name="digital02">
+            <label for="toggle">
+              <i class="bulb">
+                <span class="bulb-center"></span>
+                <span class="filament-1"></span>
+                <span class="filament-2"></span>
+                <span class="reflections">
+                  <span></span>
+                </span>
+                <span class="sparks">
+                  <i class="spark1"></i>
+                  <i class="spark2"></i>
+                  <i class="spark3"></i>
+                  <i class="spark4"></i>
+                </span>
+              </i>
+            </label>
+          </div>
+          <p class="devicename">Digital Device 02</p>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <input class="l device" type="checkbox" name="light02">
+          <p class="devicename">Light 02</p>
+        </div>
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <h1 id="main-title">Home Automation System</h1>
+        </div>
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <div class="switch">
+            <input type="checkbox" name="digital03">
+            <label for="toggle">
+              <i class="bulb">
+                <span class="bulb-center"></span>
+                <span class="filament-1"></span>
+                <span class="filament-2"></span>
+                <span class="reflections">
+                  <span></span>
+                </span>
+                <span class="sparks">
+                  <i class="spark1"></i>
+                  <i class="spark2"></i>
+                  <i class="spark3"></i>
+                  <i class="spark4"></i>
+                </span>
+              </i>
+            </label>
+          </div>
+          <p class="devicename">Digital Device 03</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <input class="l device" type="checkbox" name="light03">
+          <p class="devicename">Light 03</p>
+        </div>
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <div class="value">0</div>
+          <br>
+          <input type="range" min="0" max="100" step="1" value="0" name="analog01">
+          <p class="devicename">Analog Device 01</p>
+        </div>
+        <div class="col-md-3 col-sm-12 col-lg-4">
+          <div class="wrap">
+            <button class="button" type="Submit">Make Changes</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <br><br><br>
+
+  {{ url_for('static', filename='node_modules/bootstrap/dist/css/bootstrap.min.css') }}
+
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='js/popper.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" charset="utf-8"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}" charset="utf-8"></script>
+</body>
+
+</html>
