@@ -1,1 +1,1 @@
-{"lights": {"light01": true, "light02": true, "light03": false}, "digitaldevices": {"digital01": true, "digital02": false, "digital03": false}, "analog": "51"}
+{"lights": {"light01": true, "light02": true, "light03": true}, "digitaldevices": {"digital01": true, "digital02": false, "digital03": true}, "analog": "0"}
