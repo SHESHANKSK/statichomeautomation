@@ -4,8 +4,6 @@ Home Automation System is Flask based Internet of Things (IoT) static applicatio
 
 ![image](website.jpg)
 
-[STATIC HOME AUTOMATION SYSTEM](http://statichomeautomation.herokuapp.com/)
-
 [API Endpoint](http://statichomeautomation.herokuapp.com/api)
 
 ---
